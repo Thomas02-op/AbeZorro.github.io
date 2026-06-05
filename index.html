@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AbeZorro</title>
+  <link rel="icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- HEADER -->
+    <header class="sticky top-0 z-50 backdrop-blur" style="background-color: #2C1A0E; border-bottom: 1px solid rgba(200,120,10,0.3);">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a class="text-xl font-semibold tracking-wide" style="color: #E8A020;" href="index.html">AbeZorro</a>
+      <button class="md:hidden rounded-lg border border-slate-200 p-2 text-slate-700" type="button" data-menu-toggle aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium" style="color: #E8D5B0;" data-menu>
+        <a href="index.html" class="hover:text-slate-900">Inicio</a>
+        <a href="list.html" class="hover:text-slate-900">Historia</a>
+        <a href="single.html" class="hover:text-slate-900">Haz tu pedido</a>
+      </nav>
+    </div>
+    <div class="md:hidden hidden px-4 py-3" style="background-color: #1C1208; border-top: 1px solid rgba(200,120,10,0.3);" data-menu-panel>
+      <nav class="flex flex-col gap-3 text-sm font-medium" style="color: #FEF3DC;">
+        <a href="index.html">Inicio</a>
+        <a href="list.html">Historia</a>
+        <a href="single.html">Haz tu pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO CON VIDEO -->
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden px-4 py-24 text-center text-white sm:px-6 lg:px-8">
+
+      <!-- VIDEO DE FONDO -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;"
+      >
+        <source src="assets/img/zorro.mp4" type="video/mp4">
+      </video>
+
+      <!-- OVERLAY OSCURO -->
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.45); z-index:1;"></div>
+
+      <!-- TEXTO ENCIMA DEL VIDEO -->
+      <div class="relative mx-auto max-w-3xl" style="z-index:2;">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-mint-200">Miel Artesanal</p>
+        <h1 class="text-4xl font-semibold tracking-tight text-amber-500 sm:text-5xl lg:text-6xl">AbeZorro</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-100/90 sm:text-lg">Apicultura regenerativa: miel con el pulso de las abejas y el alma del Alto Andino.</p>
+        <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="list.html" class="rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">Historia</a>
+          <a href="single.html" class="rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">Haz tu pedido</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TARJETAS -->
+
+    <!-- SECCIÓN DOS COLUMNAS -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+    
+    <!-- COLUMNA IZQUIERDA: TEXTOS Y ENFOQUE -->
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-mint-600">Sobre Nosotros</p>
+      <h2 class="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl">Un lugar unico y puro</h2>
+      <p class="mt-4 text-slate-600">Trabajamos con pocas colmenas en un bosque altoandino en Guachetá. No forzamos la producción, ni alimentamos artificialmente a las abejas. Cosechamos solo los excedentes. Por eso hay poca miel, pero de mucha calidad.</p>
+      
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="rounded-full px-4 py-2 text-sm font-medium" style="background-color: #F5E6C8; color: #C8780A;">Natural</span>
+        <span class="rounded-full px-4 py-2 text-sm font-medium" style="background-color: #EDD9A3; color: #2C1A0E;">Unica</span>
+        <span class="rounded-full px-4 py-2 text-sm font-medium" style="background-color: #EDD9A3; color: #2C1A0E;">Artesanal</span>
+      </div>
+    </div>
+    
+    <!-- COLUMNA DERECHA: DISEÑO DE LA MIEL CON VÍDEO INTEGRADO -->
+    <div class="rounded-3xl overflow-hidden shadow-sm ring-1" style="border-color: #FAEAB1; box-shadow: 0 1px 3px 0 rgba(250, 234, 177, 0.4);">
+      <div class="px-6 py-8 sm:px-10" style="background-color: #1C1208;">
+        
+        <!-- Textos artesanales -->
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style="color: #F5C842;">Nuestra miel</p>
+        <h3 class="text-2xl font-semibold text-white mb-4">Poca cantidad. Mucha calidad.</h3>
+
+        <!-- Contenedor del Vídeo adaptado al diseño -->
+        <div class="w-full overflow-hidden rounded-2xl" style="border: 1px solid rgba(250, 234, 177, 0.2);">
+          <div class="aspect-video w-full">
+            <!-- Recuerda cambiar el 'src' por la ruta de tu vídeo -->
+              <video 
+                src="assets/img/extraccion.mp4" 
+                autoplay
+                muted
+                loop
+                playsinline
+                class="h-full w-full object-cover">
+                Tu navegador no soporta la reproducción de vídeos.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 ">
+      <div class="grid gap-6 md:grid-cols-3 background-color: #FEF3DC">
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm "style="background-color: #F5E6C8;">
+          <img src="assets/img/miel3.jpg" alt="Frasco de miel AbeZorro 310g" class="w-full h-70 object-cover">
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" style="background-color: #F5E6C8;">
+          <img src="assets/img/lote2.jpg" alt="Frasco de miel AbeZorro 310g" class="w-full h-70 object-cover">
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" style="background-color: #F5E6C8;">
+          <img src="assets/img/miel2.jpeg" alt="Frasco de miel AbeZorro 310g" class="w-full h-70 object-cover">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:px-8 md:flex-row md:items-center md:justify-between">
+      <p>© AbeZorro</p>
+      <div class="flex gap-4">
+        <a href="index.html" class="hover:text-slate-900">Inicio</a>
+        <a href="list.html" class="hover:text-slate-900">Historia</a>
+        <a href="single.html" class="hover:text-slate-900">Haz tu pedido</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

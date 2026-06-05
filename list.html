@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuestra Historia - AbeZorro</title>
+  <link rel="icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- HEADER SIN CAMBIOS -->
+  <header class="sticky top-0 z-50 backdrop-blur" style="background-color: #2C1A0E; border-bottom: 1px solid rgba(200,120,10,0.3);">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a class="text-xl font-semibold tracking-wide" style="color: #E8A020;" href="index.html">AbeZorro</a>
+      <button class="md:hidden rounded-lg border border-slate-200 p-2 text-slate-700" type="button" data-menu-toggle aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium" style="color: #E8D5B0;" data-menu>
+        <a href="index.html" class="hover:text-slate-900">Inicio</a>
+        <a href="list.html" class="hover:text-slate-900">Historia</a>
+        <a href="single.html" class="hover:text-slate-900">Haz tu pedido</a>
+      </nav>
+    </div>
+    <div class="md:hidden hidden px-4 py-3" style="background-color: #1C1208; border-top: 1px solid rgba(200,120,10,0.3);" data-menu-panel>
+      <nav class="flex flex-col gap-3 text-sm font-medium" style="color: #FEF3DC;">
+        <a href="index.html">Inicio</a>
+        <a href="list.html">Historia</a>
+        <a href="single.html">Haz tu pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO CON LOGOTIPO -->
+    <section class="relative flex min-h-[40vh] items-center justify-center overflow-hidden" style="background-color: #F5E6C8;">
+
+      <!-- Patrón decorativo de fondo -->
+      <div class="absolute inset-0 opacity-10">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hex" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+              <polygon points="30,2 56,17 56,47 30,62 4,47 4,17" fill="none" stroke="#C8780A" stroke-width="1.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hex)"/>
+        </svg>
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center gap-8 px-4 py-16 text-center sm:flex-row sm:text-left sm:gap-12 max-w-5xl mx-auto sm:px-6 lg:px-8">
+
+        <!-- ESPACIO PARA EL LOGOTIPO -->
+        <div class="flex-shrink-0">
+          <div class="w-40 h-40 rounded-full overflow-hidden border-4 shadow-lg flex items-center justify-center" style="border-color: #C8780A; background-color: #FEF3DC;">
+            <!-- Reemplaza esta imagen con tu logotipo -->
+            <img
+              src="assets/img/logo.jpeg"
+              alt="Logo AbeZorro"
+              class="w-full h-full object-cover p-3"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <!-- Placeholder si no hay logo aún -->
+            <div style="display:none; flex-direction:column; align-items:center; justify-content:center; color:#C8780A;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>
+              <span class="text-xs mt-1 font-medium">Tu logo aquí</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TÍTULO -->
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] mb-3" style="color: #C8780A;">Nuestra historia</p>
+          <h1 class="text-4xl font-semibold text-slate-900 sm:text-5xl leading-tight">Antes del nombre,<br>estuvo el territorio.</h1>
+          <p class="mt-4 text-slate-600 max-w-xl text-base leading-relaxed">Un monte altoandino. Una abeja. Un zorro. Y un pacto que lo cambió todo.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HISTORIA FUNDACIONAL -->
+    <section class="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+
+      <!-- Bloque 1: El territorio -->
+      <div class="mb-16">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style="color: #C8780A;">El origen</p>
+        <h2 class="text-3xl font-semibold text-slate-900 mb-6">El monte que enseña a esperar</h2>
+        <div class="prose max-w-none text-slate-600 text-lg leading-relaxed space-y-5">
+          <p>En el monte altoandino, donde el frío guarda la flor y el silencio enseña a esperar, la abeja trabajaba sin ser vista. Transformaba el néctar con paciencia antigua, siguiendo leyes que no necesitan palabras.</p>
+          <p>El zorro caminaba cerca. No buscaba la colmena. Observaba. Entendía que la vida se sostiene en el equilibrio: tomar solo cuando hay abundancia, cuidar incluso lo que no se posee. Por eso el zorro se volvió guardián, no dueño.</p>
+        </div>
+      </div>
+
+      <!-- Separador visual -->
+      <div class="flex items-center gap-4 mb-16">
+        <div class="flex-1 h-px" style="background-color: #FAEAB1;"></div>
+        <span class="text-2xl">🐝</span>
+        <div class="flex-1 h-px" style="background-color: #FAEAB1;"></div>
+      </div>
+
+      <!-- Bloque 2: El pacto -->
+      <div class="mb-16 rounded-3xl p-8 sm:p-10" style="background-color: #FDF0C8;">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style="color: #C8780A;">El pacto</p>
+        <h2 class="text-3xl font-semibold text-slate-900 mb-6">Crear y proteger</h2>
+        <div class="text-slate-700 text-lg leading-relaxed space-y-5">
+          <p>AbeZorro nace de ese encuentro invisible. No es la abeja sola, ni el zorro solo, sino el pacto entre crear y proteger.</p>
+          <p>Cada cosecha respeta el ritmo del monte. Cada gota recuerda que la miel no es un producto, sino una consecuencia: del bosque vivo, de las abejas libres y de una decisión humana consciente.</p>
+          <blockquote class="border-l-4 pl-6 my-6 italic text-slate-600" style="border-color: #C8780A;">
+            "AbeZorro no nombra una marca, nombra un pacto: producir sin romper y cosechar sin dominar."
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Separador visual -->
+      <div class="flex items-center gap-4 mb-16">
+        <div class="flex-1 h-px" style="background-color: #FAEAB1;"></div>
+        <span class="text-2xl">🦊</span>
+        <div class="flex-1 h-px" style="background-color: #FAEAB1;"></div>
+      </div>
+
+      <!-- Bloque 3: Quiénes somos -->
+      <div class="mb-16">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style="color: #C8780A;">Acerca de nosotros</p>
+        <h2 class="text-3xl font-semibold text-slate-900 mb-6">Un terreno, un propósito, diez años de visión</h2>
+        <div class="text-slate-600 text-lg leading-relaxed space-y-5">
+          <p>En 2021 llegamos a un terreno muy castigado por el paso del tiempo. Hoy, con técnicas pasivas, mucho aprendizaje y una enorme dosis de paciencia, lo estamos acompañando en su proceso de recuperación.</p>
+          <p>Buscamos que en 10 años sea una finca autosostenible, donde la conservación de la flora y fauna nativas sea el corazón del proyecto.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta destacada: La miel -->
+      <div class="rounded-3xl overflow-hidden shadow-sm ring-1" style="ring-color: #FAEAB1;">
+        <div class="px-8 py-6 sm:px-10" style="background-color: #1C1208;">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style="color: #F5C842;">Nuestra miel</p>
+          <h3 class="text-2xl font-semibold text-white mb-4">Poca cantidad. Mucha calidad.</h3>
+          <p class="text-lg leading-relaxed" style="color: rgba(253,240,200,0.85);">
+            Trabajamos con pocas colmenas en un bosque altoandino en Guachetá. No forzamos la producción, ni alimentamos artificialmente a las abejas. Cosechamos solo los excedentes. Por eso hay poca miel, pero de mucha calidad.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 divide-x" style="background-color: #FDF0C8; divide-color: #FAEAB1;">
+          <div class="px-6 py-5 text-center">
+            <p class="text-2xl font-semibold" style="color: #C8780A;">100%</p>
+            <p class="text-sm text-slate-600 mt-1">Natural</p>
+          </div>
+          <div class="px-6 py-5 text-center">
+            <p class="text-2xl font-semibold" style="color: #C8780A;">0</p>
+            <p class="text-sm text-slate-600 mt-1">Alimentación artificial</p>
+          </div>
+          <div class="px-6 py-5 text-center">
+            <p class="text-2xl font-semibold" style="color: #C8780A;">2021</p>
+            <p class="text-sm text-slate-600 mt-1">Inicio del proyecto</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:px-8 md:flex-row md:items-center md:justify-between">
+      <p>© AbeZorro</p>
+      <div class="flex gap-4">
+        <a href="index.html" class="hover:text-slate-900">Inicio</a>
+        <a href="list.html" class="hover:text-slate-900">Apartado 2</a>
+        <a href="single.html" class="hover:text-slate-900">Apartado 3</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
